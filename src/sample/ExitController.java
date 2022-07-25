@@ -6,13 +6,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class ExitController {
+    @FXML
+    private void initialize(){
+        resultILabelId.setText(ResultClass.getResult() + " из " + ResultClass.getAmount());
+    }
 
     @FXML
     private Label resultILabelId;

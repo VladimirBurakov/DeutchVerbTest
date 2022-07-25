@@ -30,22 +30,17 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField fx:id="zweiFormTextId" layoutX="15.0" layoutY="17.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <TextField fx:id="zweiFormTextId" layoutX="15.0" layoutY="17.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="präteritumTextId" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <TextField fx:id="präteritumTextId" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="partizipIITextId" layoutX="322.0" layoutY="17.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </TextField>
-                  <TextField fx:id="übersetzungTextId" layoutX="478.0" layoutY="17.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                  <TextField fx:id="partizipIITextId" layoutX="322.0" layoutY="17.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -75,54 +70,81 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="zweiFormAntwortId" contentDisplay="CENTER" layoutX="212.0" layoutY="19.0" text="Antwort" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Label fx:id="zweiFormAntwortId" contentDisplay="CENTER" layoutX="212.0" layoutY="19.0" text="Result" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="präteritumAntwortId" contentDisplay="CENTER" layoutX="162.0" layoutY="109.0" text="Antwort" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Label fx:id="präteritumAntwortId" contentDisplay="CENTER" layoutX="162.0" layoutY="109.0" text="Result" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="partizipIIAntwortId" contentDisplay="CENTER" layoutX="314.0" layoutY="109.0" text="Antwort" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Label fx:id="partizipIIAntwortId" contentDisplay="CENTER" layoutX="314.0" layoutY="109.0" text="Result" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="übersetzungAntwortId" contentDisplay="CENTER" layoutX="52.0" layoutY="19.0" text="Antwort" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                  <Label fx:id="übersetzungAntwortId" contentDisplay="CENTER" layoutX="52.0" layoutY="19.0" text="Result" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="wortLabelId" contentDisplay="CENTER" text="Wort" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Label fx:id="wortLabelId" contentDisplay="CENTER" text="Wort" textFill="#3264c8" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="zweiFormRightLabelId" contentDisplay="CENTER" text="-" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <Label fx:id="zweiFormRightLabelId" contentDisplay="CENTER" text="-" textFill="#3264c8" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="präteritumRightLablelId" contentDisplay="CENTER" text="-" textFill="#3264c8" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="partizipIIRightLabelId" contentDisplay="CENTER" text="-" textFill="#3264c8" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="übersetzungRightLabelId" contentDisplay="CENTER" text="-" textFill="#3264c8" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="12.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="übersetzungLabelId" contentDisplay="CENTER" layoutX="70.0" layoutY="48.0" text="Wort" textFill="#3264c8" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="präteritumRightLablelId" contentDisplay="CENTER" text="-" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <Label contentDisplay="CENTER" layoutX="70.0" layoutY="48.0" text="Antwort" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="partizipIIRightLabelId" contentDisplay="CENTER" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="übersetzungRightLabelId" contentDisplay="CENTER" text="-" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <Label fx:id="zweiFormAntwortId1" contentDisplay="CENTER" layoutX="226.0" layoutY="81.0" text="Result" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
                </children>
             </GridPane>
-            <Button contentDisplay="CENTER" layoutX="637.0" layoutY="240.0" mnemonicParsing="false" onAction="#CheckButtonOnAction" prefHeight="30.0" prefWidth="100.0" text="Check" textAlignment="CENTER" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="120.0">
+            <Button fx:id="checkButtonId" contentDisplay="CENTER" layoutX="637.0" layoutY="240.0" mnemonicParsing="false" onAction="#CheckButtonOnAction" prefHeight="30.0" prefWidth="100.0" text="Check" textAlignment="CENTER" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="120.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -149,12 +171,28 @@
                         <Insets right="5.0" />
                      </GridPane.margin>
                   </Label>
-                  <Label fx:id="resultILabelId" contentDisplay="CENTER" layoutX="244.0" layoutY="12.0" text="4 из 4" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+                  <Label fx:id="resultLabelId" contentDisplay="CENTER" layoutX="244.0" layoutY="12.0" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" text="0" GridPane.columnIndex="1" GridPane.halignment="LEFT">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <GridPane.margin>
                         <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="415.0" layoutY="12.0" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" text=" из " GridPane.columnIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="resultAusLabelId" contentDisplay="CENTER" layoutX="415.0" layoutY="12.0" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" text="0" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="55.0" />
                      </GridPane.margin>
                   </Label>
                </children>
