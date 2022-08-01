@@ -8,6 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -62,6 +64,9 @@ public class Controller {
     @FXML
     private Button checkButtonId;
 
+    @FXML
+    private Button nextButtonId;
+
     private String[][]dictionary;
     private String[]row;
     private int countAll = 0;
@@ -107,7 +112,7 @@ public class Controller {
     }
 
     @FXML
-    void CheckButtonOnAction(ActionEvent event) {
+    void checkButtonOnAction(ActionEvent event) {
         if(flag){
             //checkButtonId.isDisable();
         }else if(zweiFormTextId.getText().isEmpty() ||
@@ -156,7 +161,49 @@ public class Controller {
     }
 
     @FXML
-    void NextButtonOnAction(ActionEvent event) {
+    void enterZweiFormText(KeyEvent event) {
+        KeyCode key = event.getCode();
+        if(key == KeyCode.ENTER){
+            präteritumTextId.requestFocus();
+        }
+    }
+
+    @FXML
+    void enterPrateritumText(KeyEvent event) {
+        KeyCode key = event.getCode();
+        if(key == KeyCode.ENTER){
+            partizipIITextId.requestFocus();
+        }
+    }
+
+    @FXML
+    void enterPartizipText(KeyEvent event) {
+        KeyCode key = event.getCode();
+        if(key == KeyCode.ENTER){
+            checkButtonId.requestFocus();
+        }
+    }
+
+    @FXML
+    void enterCheckButton(KeyEvent event) {
+        KeyCode key = event.getCode();
+        if(key == KeyCode.ENTER){
+            checkButtonId.fire();
+            nextButtonId.requestFocus();
+        }
+    }
+
+    @FXML
+    void enterNextButton(KeyEvent event) {
+        KeyCode key = event.getCode();
+        if(key == KeyCode.ENTER){
+            nextButtonId.fire();
+            zweiFormTextId.requestFocus();
+        }
+    }
+
+    @FXML
+    void nextButtonOnAction(ActionEvent event) {
         if(zweiFormTextId.getText().isEmpty() ||
                 präteritumTextId.getText().isEmpty() || partizipIITextId.getText().isEmpty()){
             setEmptyText();
@@ -164,14 +211,13 @@ public class Controller {
             flag = false;
             clearAllText();
             setDefaultTextColor();
-            //checkButtonId.isArmed();
             getRow();
         }
 
     }
 
     @FXML
-    void FinishTestButtonOnAction(ActionEvent event) {
+    void finishTestButtonOnAction(ActionEvent event) {
         ResultClass.setResult(countResult);
         ResultClass.setAmount(countAll);
         resultLabelId.getScene().getWindow().hide();

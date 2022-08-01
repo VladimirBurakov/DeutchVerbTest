@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DeutchVerbTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DeutchVerbTest_jar</output-path>
+    <root id="archive" name="DeutchVerbTest.jar">
+      <element id="module-output" name="DeutchVerbTest" />
+    </root>
+  </artifact>
+</component>
