@@ -67,6 +67,9 @@ public class Controller {
     @FXML
     private Button nextButtonId;
 
+    @FXML
+    private Button loadFileId;
+
     private String[][]dictionary;
     private String[]row;
     private int countAll = 0;
@@ -236,6 +239,15 @@ public class Controller {
         stage.setMinHeight(150);
         stage.setMinWidth(250);
         stage.show();
+    }
+
+    @FXML
+    void loadDictionaryButtonOnAction(ActionEvent event){
+        dictionary = new LoadDictionaryFromFile().getDictionaryFromFile();
+        loadFileId.isDisable();
+        loadFileId.setStyle("-fx-text-fill: grey");
+        getRow();
+        setEmptyText();
     }
 }
 

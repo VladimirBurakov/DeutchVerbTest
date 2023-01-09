@@ -195,6 +195,14 @@
                         <Insets left="55.0" />
                      </GridPane.margin>
                   </Label>
+                  <Button fx:id="loadFileId" mnemonicParsing="false" onAction="#loadDictionaryButtonOnAction" text="Load_File" textFill="GREEN">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
                </children>
             </GridPane>
             <Button contentDisplay="CENTER" layoutX="14.0" layoutY="225.0" mnemonicParsing="false" onAction="#finishTestButtonOnAction" prefHeight="30.0" prefWidth="130.0" text="Finish test" textAlignment="CENTER" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0">
